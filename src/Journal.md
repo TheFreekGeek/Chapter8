@@ -1,0 +1,2 @@
+Phase 1
+Went pretty smooth but the number of parameters in everything you do is getting to be way more than in the begining. The compiler sees the abstract class and prevents the compiler from running.
