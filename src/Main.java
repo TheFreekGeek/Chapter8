@@ -53,4 +53,19 @@ void main() {
         System.out.println(monster.getName());
         monster.performAttack();
     }
+
+    for (DigitalMonster monster : cyberdex) {
+        if (monster instanceof Flyable) {
+            System.out.println(" ");
+            System.out.println("This monster can fly!");
+            System.out.println(monster.getName());
+            ((Flyable) monster).fly();
+        }
+        else if (monster instanceof Electric) {
+            System.out.println(" ");
+            System.out.println("This monster has electrical powers!");
+            System.out.println(monster.getName());
+            ((Electric) monster).shock();
+        }
+    }
 }

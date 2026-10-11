@@ -6,3 +6,6 @@ Projects are growing more. Some issues with how to format interfaces but I got t
 
 Phase 3
 This step was much easier for me, already covered the majority of it multiple times. Polymorphism allows all subclasses to still be seen as monsters and can be contained together.
+
+Phase 4
+This step was very straightforward, with an IDE. Hand coding I would have had issues. Using instanceof lets you find only the objects using the interfaces you want.
