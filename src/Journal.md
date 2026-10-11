@@ -9,3 +9,6 @@ This step was much easier for me, already covered the majority of it multiple ti
 
 Phase 4
 This step was very straightforward, with an IDE. Hand coding I would have had issues. Using instanceof lets you find only the objects using the interfaces you want.
+
+Phase 5
+Testing more monsters worked. Didn't have any issues adding the classes or instantiating in main. Arrays worked.

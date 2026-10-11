@@ -21,6 +21,16 @@ void main() {
     toaster.setLevel(2);
     toaster.setElement("Water");
 
+    FlyingFish cheepcheep = new  FlyingFish();
+    cheepcheep.setName("Cheepcheep");
+    cheepcheep.setLevel(2);
+    cheepcheep.setElement("Water");
+
+    ElectricalFire shorty = new  ElectricalFire();
+    shorty.setName("Shorty");
+    shorty.setLevel(2);
+    shorty.setElement("Fire");
+
     /*System.out.println(" ");
     System.out.println(blaze.getName());
     blaze.performAttack();
@@ -47,25 +57,32 @@ void main() {
     cyberdex.add(bubbles);
     cyberdex.add(toaster);
     cyberdex.add(blaze);
+    cyberdex.add(cheepcheep);
+    cyberdex.add(shorty);
+
 
     for (DigitalMonster monster : cyberdex) {
         System.out.println(" ");
         System.out.println(monster.getName());
         monster.performAttack();
     }
-
+    System.out.println(" ");
     for (DigitalMonster monster : cyberdex) {
         if (monster instanceof Flyable) {
-            System.out.println(" ");
             System.out.println("This monster can fly!");
             System.out.println(monster.getName());
             ((Flyable) monster).fly();
-        }
-        else if (monster instanceof Electric) {
             System.out.println(" ");
-            System.out.println("This monster has electrical powers!");
+        }
+
+    }
+    System.out.println(" ");
+    for (DigitalMonster monster : cyberdex) {
+        if (monster instanceof Electric) {
+            System.out.println("This monster has electrical powers");
             System.out.println(monster.getName());
             ((Electric) monster).shock();
+            System.out.println(" ");
         }
     }
 }
