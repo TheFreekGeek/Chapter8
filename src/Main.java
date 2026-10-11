@@ -21,7 +21,7 @@ void main() {
     toaster.setLevel(2);
     toaster.setElement("Water");
 
-    System.out.println(" ");
+    /*System.out.println(" ");
     System.out.println(blaze.getName());
     blaze.performAttack();
 
@@ -38,6 +38,19 @@ void main() {
     System.out.println(toaster.getName());
     toaster.shock();
     toaster.performAttack();
+    */
 
     //DigitalMonster test = new DigitalMonster();
+
+    ArrayList<DigitalMonster> cyberdex = new ArrayList<>();
+    cyberdex.add(jean);
+    cyberdex.add(bubbles);
+    cyberdex.add(toaster);
+    cyberdex.add(blaze);
+
+    for (DigitalMonster monster : cyberdex) {
+        System.out.println(" ");
+        System.out.println(monster.getName());
+        monster.performAttack();
+    }
 }
