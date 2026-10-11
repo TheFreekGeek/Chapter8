@@ -6,18 +6,38 @@ void main() {
     blaze.setLevel(1);
     blaze.setElement("Fire");
 
+    FireBird jean = new FireBird();
+    jean.setName("Jean");
+    jean.setLevel(2);
+    jean.setElement("Fire");
+
     WaterMonster bubbles = new WaterMonster();
     bubbles.setName("Bubbles");
     bubbles.setLevel(1);
     bubbles.setElement("Water");
+
+    ShockerFish toaster = new ShockerFish();
+    toaster.setName("Toaster");
+    toaster.setLevel(2);
+    toaster.setElement("Water");
 
     System.out.println(" ");
     System.out.println(blaze.getName());
     blaze.performAttack();
 
     System.out.println(" ");
+    System.out.println(jean.getName());
+    jean.fly();
+    jean.performAttack();
+
+    System.out.println(" ");
     System.out.println(bubbles.getName());
     bubbles.performAttack();
+
+    System.out.println(" ");
+    System.out.println(toaster.getName());
+    toaster.shock();
+    toaster.performAttack();
 
     //DigitalMonster test = new DigitalMonster();
 }

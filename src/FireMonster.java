@@ -3,4 +3,5 @@ public class FireMonster extends DigitalMonster {
     public void performAttack() {
         System.out.println("Launches Fireball!");
     }
+
 }
